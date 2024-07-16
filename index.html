@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link rel="stylesheet" href="./Calculator.css">
+   <script src="./Calculator.js" defer></script>
+   
+</head>
+<body>
+<div id="container">
+    <form name="calc">
+        <input id="display" name="Ans">
+        <br><br>
+        <input onmousedown="clickAudio()" class="button" type="button" value="1" onclick="calc.Ans.value+='1'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="2" onclick="calc.Ans.value+='2'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="3" onclick="calc.Ans.value+='3'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="+" onclick="calc.Ans.value+='+'">
+        <br><br>
+        <input onmousedown="clickAudio()" class="button" type="button" value="4" onclick="calc.Ans.value+='4'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="5" onclick="calc.Ans.value+='5'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="6" onclick="calc.Ans.value+='6'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="-" onclick="calc.Ans.value+='-'">
+        <br><br>
+        <input onmousedown="clickAudio()" class="button" type="button" value="7" onclick="calc.Ans.value+='7'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="8" onclick="calc.Ans.value+='8'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="9" onclick="calc.Ans.value+='9'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="*" onclick="calc.Ans.value+='*'">
+        <br><br>
+        <input onmousedown="clickAudio()" class="button" type="button" value="0" onclick="calc.Ans.value+='0'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="." onclick="calc.Ans.value+='.'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="/" onclick="calc.Ans.value+='/'">
+        <input onmousedown="clickAudio()" class="button" type="button" value="%" onclick="calc.Ans.value+='%'">
+        <br><br>
+        <input onmousedown="clickAudio()" id="clearButton" type="button" value="Clear" onclick="calc.Ans.value=''">
+        <input onmousedown="clickAudio()" id="equalButton" type="button" value="=" onclick="calc.Ans.value=eval(calc.Ans.value)">
+    </form>
+</div>
+
+
+</body>
+</html>
